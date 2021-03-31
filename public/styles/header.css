@@ -1,0 +1,19 @@
+.header {
+  background-color: var(--darksalmon);
+  color: var(--white);
+
+  padding: var(--med-size);
+  border-bottom: var(--tiny-size) solid var(--white);
+}
+
+.login-button {
+  background-color: var(--primary-button);
+  padding: var(--small-size) var(--med-size);
+  border-radius: var(--large-border-radius);
+}
+
+.register-button {
+  background-color: var(--primary-button);
+  padding: var(--small-size) var(--med-size);
+  border-radius: var(--large-border-radius);
+}

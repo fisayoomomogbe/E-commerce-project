@@ -1,0 +1,57 @@
+.content {
+  padding-right: var(--med-size);
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: var(--small-size);
+}
+
+.products li {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas:
+    "image name price"
+    "image description cart-button";
+  row-gap: var(--small-size);
+  column-gap: var(--small-size);
+  padding: var(--small-size);
+  border-radius: var(--med-border-radius);
+  background-color: var(--light-gray);
+  color: var(--black);
+}
+
+.products li img {
+  grid-area: image;
+  height: 100px;
+  width: 100px;
+}
+
+.products li h2 {
+  grid-area: name;
+}
+.products li h3 {
+  grid-area: name;
+}
+
+.products li span {
+  grid-area: price;
+  justify-self: end;
+  align-self: center;
+  background-color: var(--info-button);
+  padding: var(--tiny-size) var(--small-size);
+  border-radius: var(--large-border-radius);
+}
+
+.products li p {
+  grid-area: description;
+}
+
+.products li button {
+  grid-area: cart-button;
+  background-color: var(--success-button);
+  padding: var(--small-size) var(--med-size);
+  border-radius: var(--med-border-radius);
+}
