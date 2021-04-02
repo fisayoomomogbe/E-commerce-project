@@ -1,0 +1,35 @@
+<div></div>
+<form action="register" method="POST">
+  <section>
+    {{#if message}}
+      <p>{{message}}</p>
+    {{/if}}
+    <p>
+      <label
+        >Name
+        <input type="text" name="name" required />
+      </label>
+    </p>
+      <label
+        >Email
+        <input type="email" name="email" />
+      </label>
+    </p>
+    <p>
+      <label
+        >Password
+        <input
+          type="password"
+          name="password"
+          required
+          minlength="4"
+          maxlength="12"
+        />
+      </label>
+    </p>
+  </section>
+
+  <p>
+    <button type="submit">Submit</button>
+  </p>
+</form>

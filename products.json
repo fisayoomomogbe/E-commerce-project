@@ -1,0 +1,31 @@
+[
+  {
+    "name": "T-shirt",
+    "price": 10,
+    "description": "Adult Heavy Cotton T-shirt",
+    "imageUrl": "./public/imgs/t-shirt.jpg",
+    "category": "T-shirts"
+  },
+  {
+    "name": "Dress Shirt",
+    "price": 25,
+    "description": "Non-Iron Dress Shirt",
+    "imageUrl": "./public/imgs/dress-shirt.jpeg",
+    "category": "Shirts"
+  },
+  {
+    "name": "Jean",
+    "price": 40,
+    "description": "Men's Straight Leg Jean",
+    "imageUrl": "./public/imgs/jean.jpg",
+    "category": "Jeans"
+  },
+  {
+    "name": "Pant",
+    "price": 25,
+    "description": "Men's Straight-Fit Pant",
+    "imageUrl": "./public/imgs/pant.jpeg",
+    "category": "Pants"
+  }
+  
+]
