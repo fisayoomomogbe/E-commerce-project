@@ -1,74 +1,29 @@
+<nav class="side-menu">
+    <ul class="nav-links">
+        <li>
+            <a href="/"><button>All</button></a>
+        </li>
+        {{#each productCategories}}
+        <li>
+            <a href="?category={{this}}"><button>{{this}}</button></a>
+        </li>
+        {{/each}}
+    </ul>
+</nav>
+    <section class="content">
+    <ul class="products">
+        {{#each products}}
+        <li>
+            <img src={{imageUrl}} alt="" height="50px" width="50px" />
+            <h2>{{name}}</h2>
+            <span>${{price}}</span>
+            <p>{{description}}</p>
+            <button id={{_id}}>Add To Cart</button>
+        </li>
+        {{/each}}
+    </ul>
+</section>
 
-      <nav class="side-menu">
-        <ul class="nav-links">
-          <li>
-            <a href="index.html"> <button>All</button> </a>
-          </li>
-          <li>
-            <a href="t-shirt.html"> <button>T-shirts</button> </a>
-          </li>
-          <li>
-            <a href="dressshirt.html"> <button>Shirts</button> </a>
-          </li>
-          <li>
-            <a href="jean.html"> <button>Jeans</button></a>
-          </li>
-          <li>
-            <a href="pant.html"> <button>Pants</button> </a>
-          </li>
-        </ul>
-      </nav>
-      <section class="content">
-        <h2>Clothing</h2>
-        <ul class="products">
-          <li>
-            <img
-              src="imgs/t-shirt.jpg"
-              alt=""
-              height="50px"
-              width="50px"
-            />
-            <h3>T-shirt</h3>
-            <span>$10.00</span>
-            <p>Adult Heavy Cotton T-Shirt</p>
-            <button>Add To Cart</button>
-          </li>
-          <li>
-            <img
-              src="imgs/dress-shirt.jpeg"
-              alt=""
-              height="50px"
-              width="50px"
-            />
-            <h3>Dress Shirt</h3>
-            <span>$25.00</span>
-            <p>Non-Iron Dress Shirt</p>
-            <button>Add To Cart</button>
-          </li>
-          <li>
-            <img
-              src="imgs/jean.jpg"
-              alt=""
-              height="50px"
-              width="50px"
-            />
-            <h3>Jean</h3>
-            <span>$40.00</span>
-            <p>Men's Straight Leg Jean</p>
-            <button>Add To Cart</button>
-          </li>
-          <li>
-            <img
-              src="imgs/pant.jpeg"
-              alt=""
-              height="50px"
-              width="50px"
-            />
-            <h3>Pant</h3>
-            <span>$25.00</span>
-            <p>Men's Straight-Fit Pant</p>
-            <button>Add To Cart</button>
-          </li>
-        </ul>
-      </section>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="scripts/script.js"></script>
       

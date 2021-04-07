@@ -1,6 +1,6 @@
 const cuid = require("cuid");
 const { isEmail } = require("validator");
-const db = require("../db.js");
+const db = require("../db");
 
 const userCategories = ["customer", "admin"];
 

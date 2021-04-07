@@ -1,5 +1,5 @@
 const cuid = require("cuid");
-const db = require("../db.js");
+const db = require("../db");
 const productCategories = require("../data/productCategories");
 
 const productSchema = db.Schema({

@@ -26,7 +26,7 @@ const app = express();
 app.engine(
   "handlebars",
   expressHandlebars({
-    defaultLayout: "main",
+    defaultLayout: "index",
   })
 );
 app.set("view engine", "handlebars");

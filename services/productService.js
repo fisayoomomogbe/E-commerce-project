@@ -1,4 +1,4 @@
-const Product = require("../models/product.js");
+const Product = require("../models/product");
 
 function createProduct(fields) {
   return new Product(fields).save();
