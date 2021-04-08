@@ -10,7 +10,7 @@ async function renderProductsList(req, res, next) {
       : items;
     res.render("home", {
       layout: req.layout,
-      items: itemsToShow,
+      products: itemsToShow,
       productCategories,
     });
   } catch (error) {

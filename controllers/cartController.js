@@ -5,6 +5,7 @@ async function renderUserCart(req, res, next) {
   try {
     const cart = await cartService.getCart(req.username);
     console.log(cart);
+
     res.render("cart", { layout: req.layout, products: cart });
   } catch (error) {
     next(error);
